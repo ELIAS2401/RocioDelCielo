@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rocío del Cielo</title>
-     <!-- Favicon redondeado -->
+    <!-- Favicon redondeado -->
     <link rel="icon" href="img/logo.png" type="image/png" sizes="16x16">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Fuente Google -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/home.css">
@@ -31,7 +32,7 @@
                     <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="quienesSomos.html">Quiénes Somos</a></li>
                     <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="footer.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                 </ul>
             </div>
         </div>
@@ -44,17 +45,51 @@
         <a href="/productos.html" class="btn btn-productos mt-3">Ver Productos</a>
     </section>
 
-    <!-- Quiénes Somos -->
-    <section id="quienes" class="container my-5">
-        <h2 class="section-title text-center">Quiénes Somos</h2>
-        <p class="text-center px-3">
-            En <strong>Rocío del Cielo</strong> elaboramos budines, alfajores y tartas con recetas caseras,
-            usando ingredientes frescos y mucho amor. Creemos que cada postre es un detalle especial para compartir
-            en familia o con amigos.
+    <!-- Nuestra Pasión -->
+    <section id="pasión" class="container my-5">
+        <h2 class="section-title text-center mb-4">Nuestra Pasión</h2>
+        <p class="text-center px-3 mb-5">
+            Cada postre que elaboramos refleja nuestra dedicación y amor por la pastelería artesanal. Desde la selección
+            de los
+            mejores ingredientes hasta el toque final, buscamos endulzar tus momentos especiales.
         </p>
+
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <div class="card shadow-sm h-100">
+                    <img src="img/imgProductos/budines.jpg" class="card-img-top" alt="Budines"
+                        style="object-fit: cover; height: 250px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Budines Caseros</h5>
+                        <p class="card-text">Recetas tradicionales con ingredientes frescos y mucho amor.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card shadow-sm h-100">
+                    <img src="img/imgProductos/alfajores.jpg" class="card-img-top" alt="Alfajores"
+                        style="object-fit: cover; height: 250px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Alfajores Deliciosos</h5>
+                        <p class="card-text">Rellenos con dulce de leche y baño de chocolate irresistible.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card shadow-sm h-100">
+                    <img src="img/tartas.jpg" class="card-img-top" alt="Tartas"
+                        style="object-fit: cover; height: 250px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Tartas Creativas</h5>
+                        <p class="card-text">Perfectas para tus celebraciones y momentos especiales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Por qué elegirnos -->
+
+    <!-- Por qué elegirnos
     <section class="container my-5">
         <h2 class="section-title text-center">Por qué elegirnos</h2>
         <div class="row g-4">
@@ -77,15 +112,160 @@
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <!-- Cómo se manejan los pedidos -->
+    <!-- Cómo se manejan los pedidos -->
+    <section class="container my-5">
+        <h2 class="section-title text-center mb-4">Cómo se manejan los
+            pedidos</h2>
+        <div class="row g-4">
+            <div class="col-12 col-md-3">
+                <div class="card shadow-sm border-0 text-center p-4 h-100"
+                    style="transition: transform 0.3s; border-radius: 15px; background: #FFF4E1;">
+                    <div class="mb-3" style="font-size: 2.5rem;">1️⃣</div>
+                    <h5 class="card-title mb-2">Elegí tu producto</h5>
+                    <p class="card-text">Budines, alfajores, tartas y más. Todo fresco y artesanal.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card shadow-sm border-0 text-center p-4 h-100"
+                    style="transition: transform 0.3s; border-radius: 15px; background: #FFF4E1;">
+                    <div class="mb-3" style="font-size: 2.5rem;">2️⃣</div>
+                    <h5 class="card-title mb-2">Contactanos</h5>
+                    <p class="card-text">Hacé tu pedido por WhatsApp o email con tus detalles.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card shadow-sm border-0 text-center p-4 h-100"
+                    style="transition: transform 0.3s; border-radius: 15px; background: #FFF4E1;">
+                    <div class="mb-3" style="font-size: 2.5rem;">3️⃣</div>
+                    <h5 class="card-title mb-2">Confirmación</h5>
+                    <p class="card-text">Te confirmamos disponibilidad, fecha de entrega y costo.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card shadow-sm border-0 text-center p-4 h-100"
+                    style="transition: transform 0.3s; border-radius: 15px; background: #FFF4E1;">
+                    <div class="mb-3" style="font-size: 2.5rem;">4️⃣</div>
+                    <h5 class="card-title mb-2">Disfrutá</h5>
+                    <p class="card-text">Recibí tu pedido y disfrutá de productos frescos y deliciosos.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Por qué elegirnos -->
+    <section class="container my-5">
+        <h2 class="section-title text-center mb-4">Por qué elegirnos</h2>
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <div class="card shadow-sm border-0 text-center p-4 h-100"
+                    style="border-radius: 15px; transition: transform 0.3s; background: #FFF0F5;">
+                    <div class="mb-3" style="font-size: 2.5rem;">🧑‍🍳</div>
+                    <h5 class="card-title mb-2">Hecho a mano</h5>
+                    <p class="card-text">Productos artesanales, como los de casa.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card shadow-sm border-0 text-center p-4 h-100"
+                    style="border-radius: 15px; transition: transform 0.3s; background: #FFF0F5;">
+                    <div class="mb-3" style="font-size: 2.5rem;">🌱</div>
+                    <h5 class="card-title mb-2">Ingredientes frescos</h5>
+                    <p class="card-text">Seleccionamos la mejor materia prima para tu salud y sabor.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card shadow-sm border-0 text-center p-4 h-100"
+                    style="border-radius: 15px; transition: transform 0.3s; background: #FFF0F5;">
+                    <div class="mb-3" style="font-size: 2.5rem;">🎂</div>
+                    <h5 class="card-title mb-2">Personalización</h5>
+                    <p class="card-text">Adaptamos los pedidos a tu gusto y ocasión especial.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card shadow-sm border-0 text-center p-4 h-100"
+                    style="border-radius: 15px; transition: transform 0.3s; background: #FFF0F5;">
+                    <div class="mb-3" style="font-size: 2.5rem;">⏱️</div>
+                    <h5 class="card-title mb-2">Entrega rápida</h5>
+                    <p class="card-text">Nos aseguramos que tu pedido llegue fresco y a tiempo.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card shadow-sm border-0 text-center p-4 h-100"
+                    style="border-radius: 15px; transition: transform 0.3s; background: #FFF0F5;">
+                    <div class="mb-3" style="font-size: 2.5rem;">💛</div>
+                    <h5 class="card-title mb-2">Atención personalizada</h5>
+                    <p class="card-text">Te guiamos y asesoramos en cada paso del pedido.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agregar efecto hover -->
+    <style>
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .section-title {
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
+
     <!-- Footer -->
-    <footer>
-        <img src="img/logo.png" alt="Rocío del Cielo" width="60" class="mb-2 rounded-circle">
-        <p>&copy; 2025 Rocío del Cielo - Todos los derechos reservados</p>
-        <p>Síguenos en <a href="https://www.instagram.com/rociodelcielo_sm/" class="text-white fw-bold">Instagram</a>
-        </p>
-        <p class="small">Desarrollada por <strong>Elias Tucci</strong></p>
+    <footer class="bg-light text-dark pt-4 mt-5 border-top" id="contacto">
+        <div class="container">
+            <div class="row">
+                <!-- Columna 1: Logo e información -->
+                <div class="col-md-4 mb-4 text-center text-md-start">
+                    <img src="img/logo.png" alt="Rocío del Cielo" width="60" class="mb-2 rounded-circle">
+                    <h5 class="fw-bold">Rocío del Cielo</h5>
+                    <p class="small mb-0">
+                        Productos caseros elaborados con amor 💛<br>
+                        Budines, alfajores y tartas artesanales.
+                    </p>
+                </div>
+
+                <!-- Columna 2: Contacto -->
+                <div class="col-md-4 mb-4 text-center text-md-start">
+                    <h6 class="fw-bold text-orange">Contacto</h6>
+                    <ul class="list-unstyled small mb-2">
+                        <li>📍 La Matanza, Buenos Aires</li>
+                        <li>📞 <a href="tel:+541164681220" class="text-dark text-decoration-none">11 6468-1220</a></li>
+                        <li>📧 <a href="mailto:rociodelcielo@gmail.com"
+                                class="text-dark text-decoration-none">rociodelcielo@gmail.com</a></li>
+                    </ul>
+                    <a href="https://wa.me/541164681220?text=Hola!%20Quiero%20hacer%20un%20pedido%20😊" target="_blank"
+                        class="btn btn-success btn-sm">
+                        <i class="bi bi-whatsapp"></i> Pedir por WhatsApp
+                    </a>
+                </div>
+
+                <!-- Columna 3: Redes sociales -->
+                <div class="col-md-4 mb-4 text-center text-md-start">
+                    <h6 class="fw-bold text-orange">Seguinos</h6>
+                    <a href="https://www.instagram.com/rociodelcielo_sm/" target="_blank" class="text-dark me-3">
+                        <i class="bi bi-instagram fs-4"></i>
+                    </a>
+                    <a href="#" class="text-dark me-3">
+                        <i class="bi bi-facebook fs-4"></i>
+                    </a>
+                    <a href="#" class="text-dark">
+                        <i class="bi bi-tiktok fs-4"></i>
+                    </a>
+                </div>
+            </div>
+
+            <hr>
+            <div class="text-center small">
+                <p class="mb-0">&copy; 2025 Rocío del Cielo - Todos los derechos reservados</p>
+                <p class="mb-0">Desarrollada por <strong>Elias Tucci</strong></p>
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

@@ -89,30 +89,62 @@ const productos =
 
 // Número de WhatsApp
 const numeroWpp = "5491169390101";
-
-// Renderizar productos
 const contenedor = document.getElementById("productos");
+const carrito = [];
+const listaCarrito = document.getElementById("lista-carrito");
+const totalCarrito = document.getElementById("total-carrito");
+const contador = document.getElementById("contador-carrito");
+const btnWpp = document.getElementById("btn-wpp");
+
 productos.forEach(p => {
     const col = document.createElement("div");
     col.classList.add("col-12", "col-sm-6", "col-lg-3");
 
     col.innerHTML = `
-        <div class="card h-100 shadow-sm">
-          <img src="${p.imagen}" 
-       class="card-img-fluid mb-2" 
-       style="object-fit: cover; object-position: center; margin-top: 0px;" 
-       alt="${p.nombre}">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">${p.nombre}</h5>
-            <p class="card-text">${p.descripcion}</p>
-            <p class="fw-bold text-danger">$${p.precio}</p>
-            <a href="https://wa.me/${numeroWpp}?text=${encodeURIComponent(p.mensaje)}"
-               target="_blank"
-               class="btn btn-wpp text-white mt-auto">
-               Pedir por WhatsApp
-            </a>
-          </div>
+    <div class="card h-100 shadow-sm">
+      <img src="${p.imagen}" class="card-img-fluid mb-2" style="object-fit: cover;" alt="${p.nombre}">
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title">${p.nombre}</h5>
+        <p class="card-text">${p.descripcion}</p>
+        <p class="fw-bold text-danger">$${p.precio}</p>
+        <div class="mt-auto d-flex flex-column gap-2">
+            <button class="btn btn-outline-success mt-auto btn-agregar">Agregar al carrito</button>
+            <a href="https://wa.me/${numeroWpp}?text=${encodeURIComponent(p.mensaje)}" target="_blank" class="btn btn-wpp text-white btn-sm">Pedir por WhatsApp</a>
         </div>
-      `;
+      </div>
+    </div>
+  `;
     contenedor.appendChild(col);
+
+    // Evento agregar
+    col.querySelector(".btn-agregar").addEventListener("click", () => agregarAlCarrito(p));
 });
+
+function agregarAlCarrito(prod) {
+    carrito.push(prod);
+    actualizarCarrito();
+}
+
+function actualizarCarrito() {
+    listaCarrito.innerHTML = "";
+    carrito.forEach((p, i) => {
+        const li = document.createElement("li");
+        li.classList.add("list-group-item", "d-flex", "justify-content-between", "align-items-center");
+        li.innerHTML = `
+      ${p.nombre} - $${p.precio}
+      <button class="btn btn-sm btn-danger">X</button>
+    `;
+        li.querySelector("button").addEventListener("click", () => {
+            carrito.splice(i, 1);
+            actualizarCarrito();
+        });
+        listaCarrito.appendChild(li);
+    });
+
+    const total = carrito.reduce((acc, p) => acc + p.precio, 0);
+    totalCarrito.textContent = total;
+    contador.textContent = carrito.length;
+
+    const mensaje = carrito.map(p => `- ${p.nombre} ($${p.precio})`).join("%0A");
+    btnWpp.href = `https://wa.me/${numeroWpp}?text=Hola! Quiero pedir:%0A${mensaje}%0ATotal: $${total}`;
+}
