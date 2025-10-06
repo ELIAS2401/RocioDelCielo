@@ -41,56 +41,56 @@ const productos =
             "precio": 9000,
             "descripcion": "Clásico budín marmolado con vainilla y chocolate.",
             "imagen": "img/imgProductos/budinMarmolado.jpg",
-            "mensaje": "Hola, quiero pedir el Budín Marmolado 🍫🍦"
+            "mensaje": "Hola, quiero pedir el Budín Marmolado"
         },
         {
             "nombre": "Budín de Banana Split",
             "precio": 9000,
             "descripcion": "Budín de banana con chips de chocolate y un toque especial.",
             "imagen": "img/imgProductos/budinBanana.jpg",
-            "mensaje": "Hola, quiero pedir el Budín de Banana Split 🍌🍫"
+            "mensaje": "Hola, quiero pedir el Budín de Banana Split"
         }, 
         {
             "nombre": "Chocotortas",
             "precio": 15000,
             "descripcion": "Pack de 5 tuppers de chocotorta individual.",
             "imagen": "img/imgProductos/chocotorta.jpg",
-            "mensaje": "Hola, quiero pedir el Budín de Vainilla 🍮"
+            "mensaje": "Hola, quiero pedir el Budín de Vainilla"
         },
         {
             "nombre": "Alfajores Marplatenses",
             "precio": 9000,
             "descripcion": "Alfajores rellenos con dulce de leche y baño de chocolate. Vienen 9 por bandeja.",
             "imagen": "img/imgProductos/marplatense.jpg",
-            "mensaje": "Hola, me interesan los Alfajores Marplatenses 🍫"
+            "mensaje": "Hola, me interesan los Alfajores Marplatenses"
         },
         {
             "nombre": "Alfajores Pepitos",
             "precio": 9000,
             "descripcion": "Alfajores rellenos cubiertos con chips de chocolate. Vienen 9 por bandeja.",
             "imagen": "img/imgProductos/pepito.jpg",
-            "mensaje": "Hola, me interesan los Alfajores Pepitos 🍪"
+            "mensaje": "Hola, me interesan los Alfajores Pepitos"
         },
         {
             "nombre": "Alfajores de Maicena",
             "precio": 9000,
             "descripcion": "Clásicos alfajores con mucho dulce de leche y coco. Vienen 9 por bandeja.",
             "imagen": "img/imgProductos/maicena.jpg",
-            "mensaje": "Hola, me interesan los Alfajores de Maicena 🥥"
+            "mensaje": "Hola, me interesan los Alfajores de Maicena"
         },
         {
             "nombre": "Alfajores con Maní/Nueces",
             "precio": 9000,
             "descripcion": "Alfajores caseros con relleno y crocante de frutos secos. Vienen 9 por bandeja.",
             "imagen": "img/imgProductos/mani.jpg",
-            "mensaje": "Hola, me interesan los Alfajores con Maní o Nueces 🥜🌰"
+            "mensaje": "Hola, me interesan los Alfajores con Maní o Nueces"
         },
         {
             "nombre": "Alfajores con Chocolate Blanco",
             "precio": 9000,
             "descripcion": "Alfajores rellenos bañados en chocolate blanco. Vienen 9 por bandeja.",
             "imagen": "img/imgProductos/chocolateBlanco.jpg",
-            "mensaje": "Hola, me interesan los Alfajores con Chocolate Blanco 🤍🍫"
+            "mensaje": "Hola, me interesan los Alfajores con Chocolate Blanco"
         }
     ];
 
