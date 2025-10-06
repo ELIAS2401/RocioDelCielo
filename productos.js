@@ -49,6 +49,13 @@ const productos =
             "descripcion": "Budín de banana con chips de chocolate y un toque especial.",
             "imagen": "img/imgProductos/budinBanana.jpg",
             "mensaje": "Hola, quiero pedir el Budín de Banana Split 🍌🍫"
+        }, 
+        {
+            "nombre": "Chocotortas",
+            "precio": 15000,
+            "descripcion": "Pack de 5 tuppers de chocotorta individual.",
+            "imagen": "img/imgProductos/chocotorta.jpg",
+            "mensaje": "Hola, quiero pedir el Budín de Vainilla 🍮"
         },
         {
             "nombre": "Alfajores Marplatenses",
